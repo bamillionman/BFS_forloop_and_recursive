@@ -25,7 +25,7 @@ To do this recursivly
 
 def depth_first_print(graph, source)
 
-  print(source)                        # we print first to find what our source is for our own knowledge. 
+  print(source)                        # we need this to print out the search
                                        
   for neighbor in graph[source]        # we then for loop through the graph at source. we create the neighbor with the loop call. brackets for dictionary in python
     depth_first_print(graph, neigbor)  # we call the function inside the function but this time we use neigbor from what we just created in the for loop and that will go on til done
